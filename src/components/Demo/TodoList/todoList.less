@@ -1,0 +1,58 @@
+.todo_list {
+    input {
+        margin: auto;
+        display: block;
+        width: 560px;
+    }
+
+    .total {
+        margin: 10px 50px;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fade-out-enter-from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    .fade-out-enter-active {
+        opacity: 1;
+        transform: translateY(30px);
+        transition: all 0.5s ease;
+    }
+
+    .fade-out-enter-to {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    .fade-out-leave-active {
+        opacity: 1;
+        transform: translateY(30px);
+        transition: all 0.5s ease;
+    }
+
+    .fade-out-leave-to {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    .todo_item {
+        transition: all 0.5s ease;
+        margin: 10px 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: white;
+        background-color: skyblue;
+        cursor: pointer;
+
+        .title.done {
+            text-decoration: line-through;
+        }
+    }
+}
