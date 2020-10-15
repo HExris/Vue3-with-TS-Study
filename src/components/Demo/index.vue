@@ -10,7 +10,7 @@
   </Container>
   <!-- Shopping cart -->
   <Container title="Todo List">
-
+    <ShoppingCart/>
   </Container>
 </template>
 
@@ -19,6 +19,7 @@ import { defineComponent } from "vue";
 import Container from "./container.vue";
 import InputDemo from "./InputDemo.vue";
 import TodoList from "./TodoList/TodoList.vue";
+import ShoppingCart from "./ShoppingCart/ShoppingCart.vue";
 
 export default defineComponent({
   name: "Input",
@@ -28,7 +29,8 @@ export default defineComponent({
   components: {
     Container,
     InputDemo,
-    TodoList
+    TodoList,
+    ShoppingCart
   },
 });
 </script>
